@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uniform Shop — Task 9</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Uniform Shop</h1>
+        <p>Task 9 — Who is in</p>
+
+        <nav>
+            <a href="index.html">Sheet</a>
+            <a href="till.html">Till</a>
+            <a href="who.html">Who is in</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Stock Sheet</h2>
+        <p>Add items to the shop sheet and view their line totals.</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Line</th>
+                    <th>Note</th>
+                </tr>
+            </thead>
+            <tbody id="sheetRows">
+                <tr>
+                    <td colspan="5">No items added yet.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <form id="itemForm">
+            <label>
+                Item
+                <input id="item" type="text" placeholder="e.g. Notebook">
+            </label>
+
+            <label>
+                Quantity
+                <input id="quantity" type="number" placeholder="e.g. 3">
+            </label>
+
+            <label>
+                Price
+                <input id="price" type="text" placeholder="e.g. 150">
+            </label>
+
+            <button type="submit">Add</button>
+        </form>
+
+        <section class="result-box">
+            <p><strong>Total:</strong> <span id="total">0</span></p>
+            <p><strong>Kind of total:</strong> <span id="totalKind">number</span></p>
+            <div id="checks">Add a row to see the type checks.</div>
+        </section>
+
+        <footer>Roll Number: 249</footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

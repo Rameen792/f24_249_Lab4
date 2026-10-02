@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uniform Shop — Who is in</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Uniform Shop</h1>
+        <p>Task 12 — Report</p>
+        <nav>
+            <a href="index.html">Sheet</a>
+            <a href="till.html">Till</a>
+            <a href="who.html">Who is in</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Who is in the shop?</h2>
+        <p>Add a name, then choose Here or Out.</p>
+
+        <form id="peopleForm">
+            <label>
+                Name
+                <input id="personName" type="text" placeholder="Enter a name">
+            </label>
+
+            <button type="button" id="hereButton">Here</button>
+            <button type="button" id="outButton">Out</button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>In shop?</th>
+                </tr>
+            </thead>
+            <tbody id="peopleRows"></tbody>
+        </table>
+
+        <section class="result-box">
+            <strong>People in the shop: </strong>
+            <span id="peopleCount">0</span>
+        </section>
+
+        <footer>Roll Number: 249</footer>
+    </main>
+    <script src="who.js"></script>
+</body>
+</html>

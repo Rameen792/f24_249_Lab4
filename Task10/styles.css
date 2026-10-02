@@ -1,0 +1,151 @@
+/* Simple, readable styling for the lab pages. */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f3f6fb;
+    color: #253247;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+header {
+    background: steelblue;
+    color: white;
+    padding: 24px 16px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+header p {
+    margin: 6px 0 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    border: 1px solid #ffffff88;
+    border-radius: 8px;
+    padding: 7px 12px;
+}
+
+nav a:hover {
+    background: #ffffff22;
+}
+
+main {
+    width: min(1000px, 92%);
+    margin: 26px auto;
+    padding: 24px;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px #1e355012;
+}
+
+h2 {
+    color: steelblue;
+    margin-top: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 18px 0;
+}
+
+th,
+td {
+    padding: 11px;
+    border-bottom: 1px solid #e3e9f0;
+    text-align: left;
+}
+
+th {
+    background: #eaf1f8;
+    color: #244763;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    gap: 12px;
+    margin-top: 22px;
+    padding: 16px;
+    background: #f5f8fc;
+    border-radius: 10px;
+}
+
+label {
+    display: flex;
+    flex: 1 1 160px;
+    flex-direction: column;
+    gap: 6px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font: inherit;
+}
+
+button {
+    border: 0;
+    border-radius: 7px;
+    padding: 11px 20px;
+    background: steelblue;
+    color: white;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    filter: brightness(0.92);
+}
+
+.result-box {
+    margin-top: 18px;
+    padding: 15px;
+    background: #eef5fb;
+    border-radius: 9px;
+    overflow-wrap: anywhere;
+}
+
+footer {
+    border-top: 1px solid #e3e9f0;
+    margin-top: 24px;
+    padding-top: 14px;
+    text-align: center;
+    color: #65748a;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 16px;
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 540px;
+    }
+}
